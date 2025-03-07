@@ -83,12 +83,16 @@ LFS_CONTENT_PATH = /var/lib/gitea/data/fs
 ```
 #
 #### iv) Update Log Configuration 
+```bash
 [log] 
-ROOT_PATH = /var/lib/gitea/log 
+ROOT_PATH = /var/lib/gitea/log
+```
 #
 #### v) Fix permissions: 
+```bash
 sudo chown -R gitea:gitea /etc/gitea 
 sudo chmod 640 /etc/gitea/app.ini
+```
 #
 #
 ### 7. Configure Systemd Service for Gitea 
